@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/index.min.js"></script>
+    <!-- Phosphor Icons https://phosphoricons.com/ MIT License-->
+
+<!-- favicon -->
+	<link rel="icon" type="image/png" href="https://ametama69.github.io/favicon/favicon-48x48.png" sizes="48x48" />
+	<link rel="icon" type="image/svg+xml" href="https://ametama69.github.io/favicon/favicon.svg" />
+	<link rel="shortcut icon" href="https://ametama69.github.io/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ametama69.github.io/favicon/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Nirano Ohitashi" />
+	<link rel="manifest" href="https://ametama69.github.io/favicon/site.webmanifest" />
+
+
+<!-- OGP -->
+    <meta property="og:site_name" content="Nirano Ohitashi">
+	<meta property="og:title" content="Flip Camera">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ametama69.github.io/flipcamera/">
+	<meta property="og:image" content="https://ametama69.github.io/assets/images/oglogo.png">
+	<meta property="og:description" content="カメラの映像をリアルタイムで左右反転したりする">
+	<meta property="og:locale" content="ja_JP">
+	<meta name="twitter:card" content="summary">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-97W65RKGPY"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-97W65RKGPY');
+	</script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>Flip Camera</h2>
+        <video id="video" autoplay playsinline style="transform: scaleX(-1);"></video>
+                <div class="button-container" style="display: flex;">
+                    <button id="startButton"  class="tool-button"><i class="ph ph-power"></i></button> 
+                    <button id="stopButton" class="tool-button"><i class="ph ph-stop"></i></button> 
+                    <button id="pauseButton" class="tool-button"><i class="ph ph-pause"></i></button> 
+                    <button id="flipHButton" class="tool-button"><i class="ph ph-arrows-left-right"></i></button> 
+                    <button id="flipVButton" class="tool-button"><i class="ph ph-arrows-down-up"></i></button> 
+                    <button id="dlButton" class="tool-button"><i class="ph ph-download"></i></button> 
+                </div>
+                <div class="button-container" style="display: flex;" >
+                    <button id="grayButton" class="tool-button"><i class="ph ph-paint-brush-broad"></i></button>
+                    <button id="resetButton" class="tool-button"><i class="ph ph-broom"></i></button>
+                </div>
+        
+        <p>
+            カメラの映像をリアルタイムで左右反転したりする<br>
+            主にアナログおえかきのときにつかうつもりのやつ、分厚い紙に書いてるときとか<br>
+            スマホのリアカメラをつかいます　PCだと動かんかも<br>
+            Javascriptで動いてるので外部に画像が送信されることはありません　たぶん<br>
+        </p>
+        <p>2025-4-18(Fri)　とりあえずできた</p>
+    <h5>Share on</h5>
+    <div id="socialshare" style="display: flex;" data-color="#333,#eee,#ccc,#aaa" data-color2="#ccc,#111,#333,#666" data-text="" data-url="">
+    
+        [["X(Twitter)","https://twitter.com/intent/post?text=","ph ph-x-logo"],
+        ["Threads","https://www.threads.net/intent/post?text=","ph ph-threads-logo"],
+        ["Bluesky","https://bsky.app/intent/compose?text=","ph ph-butterfly"],
+        ["Taittsu","https://taittsuu.com/share?text=","ph ph-pants"],
+        ["fedifile","https://fedifile.net/share?text=","ph ph-fediverse-logo"]]       </div>
+        
+        <script src="../socialshare/socialshare.js"></script>
+    
+        <p>
+            <a href="index.html">Back</a><br>
+            <a href="../">Top</a>
+        </p>
+
+    <script src="script.js"></script>
+    
+</div>
+
+
+</body>
+</html>
